@@ -1,4 +1,15 @@
 #!/usr/bin/env python3
+
+# Exploit Title: ManageEngine opManager Authenticated Code Execution
+# Google Dork: N/A
+# Date: 08/13/2019
+# Exploit Author: @kindredsec
+# Vendor Homepage: https://www.manageengine.com/
+# Software Link: https://www.manageengine.com/network-monitoring/download.html
+# Version: 12.3.150
+# Tested on: Windows Server 2016
+# CVE: N/A
+
 import requests
 import re
 import random
