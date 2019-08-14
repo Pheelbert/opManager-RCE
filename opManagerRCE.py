@@ -214,7 +214,7 @@ def main():
 
 	# if there's only one device in the OpManager instance, default to running commands on that device;
 	# no need to ask the user.
-	if len(devices.keys()) == 2:
+	if len(devices.keys()) == 1:
 		device = list(devices.keys())[0]
 	else:
 		print(f"{C_YELLOW}[!]{C_RESET} There appears to be multiple Devices within this target OpManager Instance:")
