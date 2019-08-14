@@ -1,5 +1,5 @@
 # opManager-RCE
-DISCLAIMER: I don't condone the use of the script for anything other than legitimate security testing purposes. 
+DISCLAIMER: I don't condone the use of this script for anything other than legitimate security testing purposes. 
 
 Python script that utilizes opManager's "Workflow" feature to execute arbritrary commands on any managed device (Authenticated).
 
