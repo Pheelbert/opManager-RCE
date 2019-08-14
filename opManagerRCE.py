@@ -98,7 +98,7 @@ def buildTaskWindows(target, session, apiKey, device, command):
 	jsonData += """klyHour":"0","weeklyMin":"0","monthlyType":"5","monthlyWeekNum":"1","monthlyDay":["1"],"monthlyHour":"0","monthlyMin":"0","yearlyMonth":["0"],"yearlyDate":"1","yearlyHour":"0","y"""
 	jsonData += """earlyMin":"0"},"criteriaDetails":{}}}"""
 
-	makeWorkFlow = session.post(url = target + "/api/json/workflow/addWorkflow", params = { "apiKey" : apiKey }, data = { "jsonData" : jsonData }, proxies = { "http" : "http://127.0.0.1:8080"})
+	makeWorkFlow = session.post(url = target + "/api/json/workflow/addWorkflow", params = { "apiKey" : apiKey }, data = { "jsonData" : jsonData })
 
 	if "has been created successfully" in makeWorkFlow.text:
 		print(f"{C_GREEN}[+]{C_RESET} Successfully created Workflow")
@@ -126,7 +126,7 @@ def buildTaskLinux(target, session, apiKey, device, command):
 	jsonData += """klyHour":"0","weeklyMin":"0","monthlyType":"5","monthlyWeekNum":"1","monthlyDay":["1"],"monthlyHour":"0","monthlyMin":"0","yearlyMonth":["0"],"yearlyDate":"1","yearlyHour":"0","y"""
 	jsonData += """earlyMin":"0"},"criteriaDetails":{}}}"""
 
-	makeWorkFlow = session.post(url = target + "/api/json/workflow/addWorkflow", params = { "apiKey" : apiKey }, data = { "jsonData" : jsonData }, proxies = { "http" : "http://127.0.0.1:8080"})
+	makeWorkFlow = session.post(url = target + "/api/json/workflow/addWorkflow", params = { "apiKey" : apiKey }, data = { "jsonData" : jsonData })
 
 	if "has been created successfully" in makeWorkFlow.text:
 		print(f"{C_GREEN}[+]{C_RESET} Successfully created Workflow")
